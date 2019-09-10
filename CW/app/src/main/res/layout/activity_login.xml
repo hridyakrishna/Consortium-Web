@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:weightSum="100"
-    android:background="#C4C1F7">
+    android:background="#BAE7D9">
 
     <RelativeLayout
         android:id="@+id/loginLayout"

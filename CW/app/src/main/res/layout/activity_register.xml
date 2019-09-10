@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:weightSum="100"
-    android:background="#C4C1F7">
+    android:background="#BAE7D9">
 
 
     <RelativeLayout
@@ -67,7 +67,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:labelFor="@id/DOB"
-                        android:text="Date of birth" />
+                        android:text="Date of birth"
+                        android:paddingTop="10dp"/>
 
                     <EditText
                         android:id="@+id/DOB"
@@ -82,40 +83,55 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:labelFor="@id/Gender"
-                        android:text="Gender" />
+                        android:text="Gender"
+                        android:paddingTop="10dp"/>
 
-                    <EditText
-                        android:id="@+id/Gender"
-                        android:layout_width="fill_parent"
+                    <RadioGroup
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawablePadding="10dp"
-                        android:hint="Your Gender"
-                        android:inputType="text"
-                        android:singleLine="true" />
+                        android:id="@+id/radioGroup" >
+
+                        <RadioButton
+                            android:id="@+id/GenderMale"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:text="Male"/>
+                        <RadioButton
+                            android:id="@+id/GenderFemale"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:text="Female"/>
+                        <RadioButton
+                            android:id="@+id/GenderOther"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="10dp"
+                            android:text="Other"/>
+                    </RadioGroup>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
-                        android:labelFor="@id/Talent"
-                        android:text="Talent" />
+                        android:labelFor="@id/spinner"
+                        android:text="Talent"
+                        android:paddingTop="10dp"/>
 
-                    <EditText
-                        android:id="@+id/Talent"
+                    <Spinner
+                        android:id="@+id/spinner"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:drawablePadding="10dp"
-                        android:hint="Specify talent"
-                        android:inputType="text"
-                        android:singleLine="true" />
+                        android:drawablePadding="10dp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:labelFor="@id/email"
-                        android:text="Email-ID" />
+                        android:text="Email-ID"
+                        android:paddingTop="10dp"/>
 
                     <EditText
                         android:id="@+id/email"
@@ -131,7 +147,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:labelFor="@id/Address"
-                        android:text="Address" />
+                        android:text="Address"
+                        android:paddingTop="10dp"/>
 
                     <EditText
                         android:id="@+id/Address"
@@ -147,7 +164,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:labelFor="@id/Contact"
-                        android:text="Contact Number" />
+                        android:text="Contact Number"
+                        android:paddingTop="10dp"/>
 
                     <EditText
                         android:id="@+id/Contact"
@@ -163,7 +181,8 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-light"
                         android:labelFor="@id/password"
-                        android:text="Password" />
+                        android:text="Password"
+                        android:paddingTop="10dp"/>
 
                     <EditText
                         android:id="@+id/password"
@@ -177,8 +196,9 @@
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="100dp"
+                        android:layout_marginLeft="90dp"
                         android:text="Register"
+                        android:paddingTop="10dp"
                         android:background="#d67601"/>
 
 

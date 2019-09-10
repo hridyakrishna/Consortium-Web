@@ -3,7 +3,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/listPreferredItemHeightLarge"
-    android:background="#C4C1F7">
+    android:background="#BAE7D9">
 
 
     <ImageView
